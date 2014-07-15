@@ -1,0 +1,31 @@
+{
+	"name": "nasqueron-servers-homepages",
+	"version": "0.1.0",
+	"description": "static homepages for Nasqueron servers",
+	"author": {
+		"name": "Sébastien Santoro aka Dereckson",
+		"email": "dereckson@espace-win.org",
+		"url": "http://www.dereckson.be/"
+	},
+	"homepage": "http://wiki.nasqueron.org/Servers_administration",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/nasqueron/servers-homepages"
+	},
+	"bugs": {
+		"url": "https://github.com/nasqueron/servers-homepages/issues"
+	},
+	"keywords": [
+		"Nasqueron",
+		"infrastructure",
+		"sysadmin"
+	],
+	"engines": {
+		"node": ">= 0.4.0"
+	},
+	"dependencies": {
+		"ect": "^0.5.9"
+	},
+	"private": true,
+	"license": "BSD"
+}

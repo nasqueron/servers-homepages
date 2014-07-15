@@ -21,7 +21,7 @@
 	},
 	"adminLinks": [
 		["/mob", "Managed Object Browser"],
-		["folder?dcPath=ha-datacenter&amp;dsName=datastore1", "Datastore"]
+		["/folder?dcPath=ha-datacenter&amp;dsName=datastore1", "Datastore"]
 	],
 	"extraFooterSections": [{
 		"name": "Servers hosted",

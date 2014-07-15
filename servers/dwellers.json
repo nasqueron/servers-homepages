@@ -1,0 +1,34 @@
+{
+	"name": "Ysul",
+	"description": [
+		"Welcome to a Nasqueron infrastructure server. This machine provides PaaS facilities, based on Docker and OpenShift.",
+		"If you're lost, you're maybe seeking one of our gear or container (ie one of our hosted applications, sites). We maintain such a list on the Nasqueron wiki.",
+		"In <em>The Algebraist</em>, Dwellers are the Nasqueron inhabitants."
+	],
+	"infos": {
+		"network": [
+			["IP", [
+				"212.129.32.223",
+				"IPv6 still to configure"
+			]],
+			["ISP", "Online"]
+		],
+		"contact": [
+			["Maintainer", "Dereckson"],
+			["Support", "IRC Freenode #Wolfplex"]
+		],
+		"technical": [
+			["OS", "CentOS 7"],
+			["Documentation", "(wiki)"]
+		]
+	},
+	"adminLinks": [
+	],
+	"extraFooterSections": [{
+		"mode": "text",
+		"content": "If you install a service usable for each PaaS user, add it here."
+	}, {
+		"mode": "text",
+                "content": "We would like to see here an OpenStack Nova web client for example. Or something to manage the nginx front-end."
+	}]
+}

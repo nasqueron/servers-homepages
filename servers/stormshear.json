@@ -1,0 +1,34 @@
+{
+	"name": "Stormshear",
+	"description": [
+		"Welcome to a Nasqueron infrastructure server. This machine provides core services for other servers.",
+		"If you're lost, you're maybe seeking one of the servers hosted on this virtualization server. See the list below.",
+		"In <em>The Algebraist</em>, Stormshear is a fictional ship used in the Dwellers staged war."
+	],
+	"infos": {
+		"network": [
+			["IP", "62.210.76.114"],
+			["ISP", "Online"]
+		],
+		"contact": [
+			["Maintainer", "Dereckson"],
+			["Support", "IRC Freenode #Wolfplex"]
+		],
+		"technical": [
+			["OS", "VMWare EXSi 5"],
+			["Documentation", "(wiki)"]
+		]
+	},
+	"adminLinks": [
+		["/mob", "Managed Object Browser"],
+		["folder?dcPath=ha-datacenter&amp;dsName=datastore1", "Datastore"]
+	],
+	"extraFooterSections": [{
+		"name": "Servers hosted",
+		"mode": "list-links-descro",
+		"links": [
+			["Ysul", "FreeBSD (general purpose)"],
+			["Dwellers", "PaaS (OpenShift, Docker)"]
+		]
+	}]
+}

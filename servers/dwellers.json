@@ -5,7 +5,7 @@
 		"If you're lost, you're maybe seeking one of our gear or container (ie one of our hosted applications, sites). We maintain such a list on the Nasqueron wiki.",
 		"In <em>The Algebraist</em>, Dwellers are the Nasqueron inhabitants."
 	],
-	"infos": {
+	"info": {
 		"network": [
 			["IP", [
 				"212.129.32.223",

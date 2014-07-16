@@ -20,15 +20,27 @@
 		]
 	},
 	"adminLinks": [
-		["/mob", "Managed Object Browser"],
-		["/folder?dcPath=ha-datacenter&amp;dsName=datastore1", "Datastore"]
+		{
+			"url": "/mob",
+			"title": "Managed Object Browser"
+		}, {
+			"url": "/folder?dcPath=ha-datacenter&amp;dsName=datastore1",
+			"title": "Datastore"
+		}
 	],
-	"extraFooterSections": [{
-		"name": "Servers hosted",
-		"mode": "list-links-descro",
-		"links": [
-			["Ysul", "FreeBSD (general purpose)"],
-			["Dwellers", "PaaS (OpenShift, Docker)"]
-		]
-	}]
+	"extraFooterSections": [
+		{
+			"name": "Servers hosted",
+			"mode": "list-links-descro",
+			"links": [
+				{
+					"title": "Ysul",
+					"descro": "FreeBSD (general purpose)"
+				}, {
+					"title": "Dwellers",
+					"descro": "PaaS (OpenShift, Docker)"
+				}
+			]
+		}
+	]
 }

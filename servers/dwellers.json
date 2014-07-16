@@ -24,11 +24,13 @@
 	},
 	"adminLinks": [
 	],
-	"extraFooterSections": [{
-		"mode": "text",
-		"content": "If you install a service usable for each PaaS user, add it here."
-	}, {
-		"mode": "text",
-                "content": "We would like to see here an OpenStack Nova web client for example. Or something to manage the nginx front-end."
-	}]
+	"extraFooterSections": [
+		{
+			"mode": "text",
+			"content": "If you install a service usable for each PaaS user, add it here."
+		}, {
+			"mode": "text",
+	                "content": "We would like to see here an OpenStack Nova web client for example. Or something to manage the nginx front-end."
+		}
+	]
 }

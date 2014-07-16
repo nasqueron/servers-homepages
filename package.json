@@ -1,7 +1,7 @@
 {
 	"name": "nasqueron-servers-homepages",
 	"version": "0.1.0",
-	"description": "static homepages for Nasqueron servers",
+	"description": "Static homepages for Nasqueron servers",
 	"author": {
 		"name": "Sébastien Santoro aka Dereckson",
 		"email": "dereckson@espace-win.org",

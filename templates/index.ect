@@ -1,0 +1,212 @@
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/foundation/5.3.0/css/foundation.min.css" />
+    <title><%- @name %></title>
+    <style>
+      /* Common styles */
+      
+      h1 {
+        color: #FFFFF0;
+      }
+      
+      section p {
+        color: #F5F5F5;
+      }
+      
+      /* Header */
+      
+      section#identity {
+        background-color: #433A2B;
+        
+        border-bottom: solid 8px black;
+      }
+      
+      @media only screen and (min-width: 720px) {
+        section#identity {
+          padding-top: 2em;
+          height: 20em;
+          
+          background-image: url(//upload.wikimedia.org/wikipedia/commons/c/ce/SpaceElevatorInClouds.jpg);
+          background-position: top;
+          background-size: cover;
+        } 
+      }
+      
+      /* Links */
+      
+      section#identity a, footer a {
+        color: white;
+      }
+      
+      section#identity a:hover, footer a:hover {
+        color: #FFDEAD;
+      }
+      
+      section#identity a:active, footer a:active {
+        color: #FFE4B5;
+      }
+      
+      section#info a {
+        color: #806849;
+      }
+      
+      section#info a:hover {
+        color: #6B5E3E;
+      }
+      
+      section#info a:active {
+        color: #6B5E3E;
+      }
+      
+      /* Content */
+            
+      section#info {
+        height: 20em;
+      }
+      
+      @media only screen and (max-width: 64em) {
+        section {
+          padding-left: 1em;
+        }
+      }
+      
+      /* Footer */
+           
+      footer {
+        padding-top: 1em;
+        background-color: #BCA98B;
+        
+        border-top: solid 8px black;
+      }
+      
+      footer h4 {
+        color: #FFEFD5;
+      }
+           
+      @media only screen and (min-width: 64.063em) {
+        footer {
+          background-image: url(//upload.wikimedia.org/wikipedia/commons/c/ce/SpaceElevatorInClouds.jpg);
+          background-position: bottom;
+          background-repeat: no-repeat;
+        }
+      }
+      
+      @media only screen and (max-width: 64em) {
+        footer hr {
+          display: none;
+        }
+      }
+    </style>
+</head>
+<body>
+  <section id="identity">
+    <div class="row">
+      <h1><%- @name %></h1>
+      <div class="large-12 columns">
+<% for line in @description : %>
+        <p><%= line %></p>
+<% end %>	
+      </div>
+    </div>
+  </section>
+  
+  <section id="info">
+    <div class="row">
+      <h2>Server information</h2>
+      <div class="large-4 columns">
+        <h3>Network information</h3>
+        <dl>
+<% for line in @info.network : %>
+            <dt><%- @getLineTitle line %></dt>
+<% for entry in @getLineEntries line : %>
+            <dd><%- entry %></dd>
+<% end %>
+<% end %>
+        </dl>
+      </div>
+      <div class="large-4 columns">
+        <h3>Contact information</h3>
+        <dl>
+<% for line in @info.contact : %>
+            <dt><%- @getLineTitle line %></dt>
+<% for entry in @getLineEntries line : %>
+            <dd><%- entry %></dd>
+<% end %>
+<% end %>
+        </dl>
+      </div>
+      <div class="large-4 columns">
+        <dl>
+        <h3>Technical information</h3>
+<% for line in @info.technical : %>
+            <dt><%- @getLineTitle line %></dt>
+<% for entry in @getLineEntries line : %>
+            <dd><%- entry %></dd>
+<% end %>
+<% end %>
+        </dl>
+      </div>
+    </div>
+  </section>
+
+  <div style="clear: both;"></div>
+  
+  <footer>
+        <div class="row">
+            <div class="large-3 columns sep" style="text-align: center">
+                <img width="133" height="131" title="" alt="Nasqueron" src="data:image/png;base64,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" />
+                <p><strong>Nasqueron</strong> is a community of developers & creative people.</p>
+                <hr />
+                <p><strong><%- @name %></strong> is a component of the Nasqueron servers pool.</p>
+            </div>
+            <div class="large-3 columns sep">
+                <!-- This is a Nasqueron page.
+                     So, we share a footer portion with other Nasqueron pages:-->
+                <h4>Nasqueron</h4>
+                <ul>
+                    <li><a href="http://wiki.nasqueron.org/">Wiki</a></li>
+                    <li><a href="http://tools.nasqueron.org/">Tools</a></li>
+                    <li><a href="http://zed.dereckson.be">Zed</a></li>
+                    <li><a href="http://blog.nasqueron.org/">Blog</a></li>
+                    <li><a href="http://planet.nasqueron.org">Planet</a></li>
+                </ul>
+            </div>
+            <div class="large-3 columns sep">
+                <h4>Administration links</h4>
+                <ul>
+<% for link in @adminLinks : %>
+                    <li><a href="<%= link.url %>"><%= link.title %></a></li>
+<% end %>
+                </ul>
+<% for section in @extraFooterSections : %>
+<% if section.name : %>
+                <h4><%= section.name %></h4>
+<% end %>
+<% switch section.mode : %>
+  <% when 'text': %>
+                <p><%= section.content %></p>
+  <% end %>
+  <% when 'list-links-descro' : %>
+                <ul>
+    <% for link in section.links : %>
+                    <li><a href="<%= link.url %>"><%= link.title %></a><br /><%= link.descro %></li>
+    <% end %>
+                </ul>
+  <% end %>
+<% end %>
+<% end %>
+            </div>
+            <div class="large-3 columns">
+                <h4>Participate</h4>
+                <p>If you wish to participate, your help is welcome. See <a href="http://wiki.nasqueron.org/index.php?title=Servers administration">our coordination wiki</a>.</p>
+                
+                <h4>Artwork</h4>
+                <p>The infrastructure structure theme uses <a href="https://commons.wikimedia.org/wiki/File:SpaceElevatorInClouds.jpg">this space elevator picture</a> from Liftport.</p>
+            </div>
+        </div>
+  </footer>
+</body>
+</html>

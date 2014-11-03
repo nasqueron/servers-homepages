@@ -2,7 +2,7 @@
 	"name": "Dwellers",
 	"description": [
 		"Welcome to a Nasqueron infrastructure server. This machine provides PaaS facilities, based on Docker and OpenShift.",
-		"If you're lost, you're maybe seeking one of our gear or container (ie one of our hosted applications, sites). We maintain such a list on the Nasqueron wiki.",
+		"If you're lost, you're maybe seeking one of our gear or container (ie one of our hosted applications, sites). We maintain such a list on the Nasqueron agora.",
 		"In <em>The Algebraist</em>, Dwellers are the Nasqueron inhabitants."
 	],
 	"info": {

@@ -7,7 +7,7 @@
 		"email": "dereckson@espace-win.org",
 		"url": "http://www.dereckson.be/"
 	},
-	"homepage": "http://wiki.nasqueron.org/Servers_administration",
+	"homepage": "http://agora.nasqueron.org/Servers_administration",
 	"repository": {
 		"type": "git",
 		"url": "https://github.com/nasqueron/servers-homepages"

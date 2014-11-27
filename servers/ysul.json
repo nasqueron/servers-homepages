@@ -24,6 +24,10 @@
 		]
 	},
 	"adminLinks": [
+		{
+			"url": "/poudriere",
+			"title": "Poudriere"
+		}
 	],
 	"extraFooterSections": [
 		{

@@ -19,7 +19,7 @@
 			["Support", "IRC Freenode #Wolfplex"]
 		],
 		"technical": [
-			["OS", "FreeBSD 10"],
+			["OS", "FreeBSD 11"],
 			["Documentation", "https://agora.nasqueron.org/Ysul"]
 		]
 	},

@@ -24,7 +24,8 @@
 		"node": ">= 0.4.0"
 	},
 	"dependencies": {
-		"ect": "^0.5.9"
+		"autolinker": "^1.6.0",
+		"ect": "^0.5.9",
 	},
 	"private": true,
 	"license": "BSD"

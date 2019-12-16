@@ -1,0 +1,37 @@
+{
+	"name": "WindRiver",
+	"description": [
+		"Welcome to a Nasqueron infrastructure server. This machine provides a general purpose, comprehensive dev environment.",
+		"If you seek a shell account for development, TeX or a webhosting space, you're welcome on this server.",
+		"If you're lost, maybe are you seeking a website hosted here. See on the agora page or ask support for help."
+	],
+	"info": {
+		"network": [
+			["IP", [
+				"51.159.18.59",
+				"2001:bc8:6005:5:aa1e:84ff:fef3:5d9c"
+			]],
+			["ISP", "Online"]
+		],
+		"contact": [
+			["Maintainer", "Dereckson"],
+			["Support", "IRC Freenode #Wolfplex"]
+		],
+		"technical": [
+			["OS", "FreeBSD 12"],
+			["Documentation", "https://agora.nasqueron.org/WindRiver"]
+		]
+	},
+	"adminLinks": [
+		{
+			"url": "/poudriere",
+			"title": "Poudriere"
+		}
+	],
+	"extraFooterSections": [
+		{
+			"mode": "text",
+			"content": "Ysul is currently in building stage. Services are progressively migrated from Grip."
+		}
+	]
+}

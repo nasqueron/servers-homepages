@@ -1,24 +1,24 @@
 {
 	"name": "Dwellers",
 	"description": [
-		"Welcome to a Nasqueron infrastructure server. This machine provides PaaS facilities, based on Docker and OpenShift.",
+		"Welcome to a Nasqueron infrastructure server. This machine provides PaaS facilities, based on Docker, for development, testing and build purpose.",
 		"If you're lost, you're maybe seeking one of our gear or container (ie one of our hosted applications, sites). We maintain such a list on the Nasqueron agora.",
 		"In <em>The Algebraist</em>, Dwellers are the Nasqueron inhabitants."
-	],
+	],1
 	"info": {
 		"network": [
 			["IP", [
-				"212.129.32.223",
-				"IPv6 still to configure"
+				"51.255.124.11",
+				"2001:470:1f13:30b:ca5:cade:fab:1e"
 			]],
-			["ISP", "Online"]
+			["ISP", "OVH"]
 		],
 		"contact": [
 			["Maintainer", "Dereckson"],
-			["Support", "IRC Freenode #Wolfplex"]
+			["Support", "IRC Libera #Wolfplex"]
 		],
 		"technical": [
-			["OS", "CentOS 7"],
+			["OS", "Rocky 8.5"],
 			["Documentation", "https://agora.nasqueron.org/Dwellers"]
 		]
 	},

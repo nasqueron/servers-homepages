@@ -15,7 +15,7 @@
 		],
 		"contact": [
 			["Maintainer", "Dereckson"],
-			["Support", "IRC Freenode #Wolfplex"]
+			["Support", "IRC Libera #nasqueron-ops"]
 		],
 		"technical": [
 			["OS", "FreeBSD 13"],
@@ -24,14 +24,14 @@
 	},
 	"adminLinks": [
 		{
-			"url": "/poudriere",
-			"title": "Poudriere"
+			"url": "/git",
+			"title": "Git repositories"
 		}
 	],
 	"extraFooterSections": [
 		{
 			"mode": "text",
-			"content": "Ysul is currently in building stage. Services are progressively migrated from Grip."
+			"content": "Websites are available at Ysul."
 		}
 	]
 }

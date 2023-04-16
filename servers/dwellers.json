@@ -4,21 +4,22 @@
 		"Welcome to a Nasqueron infrastructure server. This machine provides PaaS facilities, based on Docker, for development, testing and build purpose.",
 		"If you're lost, you're maybe seeking one of our gear or container (ie one of our hosted applications, sites). We maintain such a list on the Nasqueron agora.",
 		"In <em>The Algebraist</em>, Dwellers are the Nasqueron inhabitants."
-	],1
+	],
 	"info": {
 		"network": [
 			["IP", [
 				"51.255.124.11",
-				"2001:470:1f13:30b:ca5:cade:fab:1e"
+				"2001:470:1f13:30b:ca5:cade:fab:1e",
+				"172.27.27.4"
 			]],
 			["ISP", "OVH"]
 		],
 		"contact": [
 			["Maintainer", "Dereckson"],
-			["Support", "IRC Libera #Wolfplex"]
+			["Support", "IRC Libera #nasqueron-ops"]
 		],
 		"technical": [
-			["OS", "Rocky 8.5"],
+			["OS", "Rocky 9"],
 			["Documentation", "https://agora.nasqueron.org/Dwellers"]
 		]
 	},
@@ -28,9 +29,6 @@
 		{
 			"mode": "text",
 			"content": "If you install a service usable for each PaaS user, add it here."
-		}, {
-			"mode": "text",
-	                "content": "We would like to see here an OpenStack Nova web client for example. Or something to manage the nginx front-end."
 		}
 	]
 }

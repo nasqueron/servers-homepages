@@ -1,0 +1,64 @@
+{
+    "name": "docker-002",
+    "description": [
+        "Welcome to a Nasqueron infrastructure server. This machine provides PaaS facilities, based on Docker.",
+        "If you're lost, you're maybe seeking one of our container (ie one of our hosted applications, sites). We maintain such a list on the Nasqueron agora."
+    ],
+    "info": {
+        "network": [
+            ["IP", [
+                "51.255.124.9",
+                "2001:470:1f13:365::50f7:ba11",
+                        "172.27.27.5"
+            ]],
+            ["ISP", "OVH"]
+        ],
+        "contact": [
+            ["Maintainer", "Dereckson"],
+            ["Support", "IRC Libera #nasqueron-ops"]
+        ],
+        "technical": [
+            ["OS", "Rocky 9"],
+            ["Documentation", "https://agora.nasqueron.org/docker-002"]
+        ]
+    },
+    "adminLinks": [
+        {
+            "url": "https://netbox.nasqueron.org/virtualization/virtual-machines/7/",
+            "title": "NetBox"
+        }, {
+            "url": "https://devcentral.nasqueron.org/source/operations/browse/main/roles/paas-docker/",
+            "title": "paas-docker role"
+        }
+    ],
+    "extraFooterSections": [
+        {
+            "name": "Services hosted",
+            "mode": "list-links-descro",
+            "links": [
+                {
+                    "title": "Jenkins CI",
+                    "url": "https://ci.nasqueron.org"
+                }, {
+                    "title": "Jenkins CD",
+                    "url": "https://cd.nasqueron.org"
+                }, {
+                    "title": "Penpot",
+                    "url": "https://design.nasqueron.org"
+                }, {
+                    "title": "Sentry",
+                    "url": "https://sentry.nasqueron.org"
+                }, {
+                    "title": "Openfire",
+                    "url": "https://xmpp.nasqueron.org"
+                }, {
+                    "title": "Etherpad",
+                    "url": "https://pad.nasqueron.org"
+                }, {
+                    "title": "Hauk",
+                    "url": "https://geo.nasqueron.org/hauk"
+                }
+            ]
+        }
+    ]
+}

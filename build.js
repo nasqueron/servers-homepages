@@ -53,9 +53,7 @@ serverData.getLineEntries = function (entry) {
         entries = entry[1];
     }
 
-    return entries.map(text => function (text) {
-        return autolinker.link(text);
-    });
+    return entries.map(text => autolinker.link(text));
 }
 
 /*  -------------------------------------------------------------
